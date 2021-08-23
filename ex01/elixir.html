@@ -5,6 +5,42 @@
         content="text/html;charset=UTF-8">
     <title>Bit Lounge 건강음료</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      /* id 셀렉터: #아이디 */
+      #green {  /* id가 green인 요소 */
+        color: green;
+      }
+
+      #blue {
+        color: blue;
+      }
+
+      #purple {
+        color: purple;
+      }
+
+      #red {
+        color: red;
+      }
+
+      /* class 셀렉터:
+        .클래스명 */
+      .beverage.green {
+        background-color: rgba(0, 255, 0, 0.1);
+      }
+
+      .beverage.blue {
+        background-color: rgba(0, 0, 255, 0.1);
+      }
+
+      .beverage.purple {
+        background-color: rgba(128, 0, 128, 0.1);
+      }
+
+      .beverage.red {
+        background-color: rgba(255, 0, 0, 0.1);
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -19,7 +55,6 @@
         <li><a href="#red">Red</a></li>
       </ul>
     </nav>
-
     <!-- 실질 컨텐츠 -->
     <article>
       <div class="seller">
@@ -36,23 +71,28 @@
           </p>
         </div>
       </section>
-
       <section id="blue" class="blue beverage">
         <div>
           <h2>Raspberry Ice Concentration</h2>
           <img src="images/lightblue.jpg"
-	@@ -45,7 +49,7 @@ <h2>Raspberry Ice Concentration</h2>
+            alt="Raspberry Ice Concentration"
+            title="Raspberry Ice Concentration" />
+          <p>
+      Combining raspberry juice with lemon grass, citrus peel and rosehips, this icy drink will make your mind feel clear and crisp.
+          </p>
         </div>
       </section>
-
       <section id="purple" class="purple beverage">
-
         <div>
           <h2>Blueberry Bliss Elixir</h2>
-	@@ -58,7 +62,7 @@ <h2>Blueberry Bliss Elixir</h2>
+          <img src="images/blue.jpg" 
+            alt="Blueberry Bliss Elixir"
+            title="Blueberry Bliss Elixir" />
+          <p>
+            Blueberries and cherry essence mixed into a base of elderflower herb tea will put you in a relaxed state of bliss in no time.
+          </p>
         </div>
       </section>
-
       <section id="red" class="red beverage">
         <div>
           <h2>Cranberry Antioxidant Blast</h2>
