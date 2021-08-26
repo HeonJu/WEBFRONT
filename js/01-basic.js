@@ -56,9 +56,3 @@ console.log(v, "=>", typeof v);
 v = 2021;
 console.log(v, "=>", typeof v); 
 
-let n1 = 5; // Literal
-let n2 = Number(5); // Number 객체
-console.log(typeof n1, typeof n2);
-console.log(Math.round(Math.PI));
-console.log(Math.min(7, 3, 5, 2, 9, 13), Math.max(7, 3, 5, 2, 9, 13));
-console.log(Math.round(3.578), Math.floor(3.578));
