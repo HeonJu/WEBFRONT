@@ -30,6 +30,3 @@ console.log(false && content);  //  -> false
 console.log(true || content);   //  -> true
 console.log(false || content);  //  -> CONTENTS 선택 
 
-for (let i = 0; i < 10; i++) {
-    if (i % 2 == 0) console.log(i);
-    }
