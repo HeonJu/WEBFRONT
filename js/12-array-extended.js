@@ -91,3 +91,38 @@ function testMap() {
     console.log("배열 곱셈(map):", multiply);
 }
 testMap(); 
+
+function testReduce() {
+    let source = [12, 4, 19, 33, 86];
+    //  callback 
+    //      acc: 직전까지의 누산값
+    //      value: 현재요소의 값
+    //      idx: 현재요소의 인덱스
+    //      arr: 누산에 사용되는 배열 자체
+    let sum = source.reduce((acc, value, idx, arr) => {
+        console.log(`이전 값은 ${acc}`);
+        console.log(`${arr}의 ${idx}번째 요소는 ${value}`);
+        //  직전 누산값과 현재 누산값을 연산하여 리턴
+        return acc + value;
+    }, 0 ); //  초깃값
+    console.log("원본:", source);
+    console.log("누계값(reduce):", sum);
+}
+// testReduce2();
+
+function filterMapReduce() {
+    let source = [12, 7, 3, 8, 4, 9, 6, 2, 15, 14];
+    /* 목표
+    source 배열에서 짝수만 필터링 : .filter
+    내부 요소를 2배 : .map
+    합산 : .reduce
+    */
+    let result = 
+        source.filter(item => item % 2 == 0)
+            .map(item => item * 2)
+            .reduce((acc, value) => {
+            return acc + value;
+        }, 0);
+    console.log("Result:", result);
+}
+filterMapReduce(); 
